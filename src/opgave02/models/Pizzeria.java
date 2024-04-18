@@ -10,8 +10,8 @@ public class Pizzeria {
         this.pizzaFactory = pizzaFactory;
     }
 
-    public Pizza orderPizza(String type, String style) {
-        Pizza pizza = pizzaFactory.createPizza(type, style);
+    public Pizza orderPizza(String type) {
+        Pizza pizza = pizzaFactory.createPizza(type);
 
         pizza.prepare();
         pizza.bake();
